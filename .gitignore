@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+*.out
+*.err
+
+# Build output
+dist/
+build/
+tmp/
+temp/
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
