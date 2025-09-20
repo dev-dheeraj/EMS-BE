@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import sequelize from './config/db.js';
 import authRoutes from './modules/auth/auth.routes.js';
+import templateRoutes from './modules/templates/template.routes.js';
 
 dotenv.config();
 
@@ -19,6 +20,8 @@ app.get('/', (req, res) => {
 });
 //  Auth routes
 app.use('/auth', authRoutes)
+// Template routes
+app.use('/api/v1/templates', templateRoutes)
 
 
 // Check for DB connection
